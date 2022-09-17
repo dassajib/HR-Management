@@ -1,0 +1,449 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f6f9ff;
+    color: #444444;
+}
+
+.login-container {
+    max-width: 1100px!important;
+}
+
+.index-card-top-margin {
+    margin-top: 6rem;
+}
+
+.index-right-side-background-color {
+    background: #F8F9FA;
+}
+
+.card-shadow {
+    box-shadow: 0 1.5rem 2rem rgba(0,0,0,.15)!important;
+}
+
+/* login */
+.login-form {
+    margin-top: 4rem!important;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.forgot-link {
+    text-decoration: none;
+    color: black;
+}
+
+.sign-in-button {
+    background: #FF4500;
+    
+    padding: 4px 0px;
+
+}
+
+.sign-in {
+    color: white;
+    font-size: 22px;
+}
+
+.sign-in-text {
+    font-weight: 700;
+}
+
+.main {
+    /* padding-top: 270px; */
+    padding-top: 60px;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+.circular-img img {
+    display: inline-block;
+    transition: .5s all;
+}
+
+
+/* company-logo-design */
+.area-one {
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    transform: rotate(359deg);
+}
+
+.area-one img {
+    height: 40px;
+}
+
+.area-two {
+    position: absolute;
+    top: 8.2%;
+    left: 21%;
+    transform: rotate(359deg);
+}
+
+.area-three {
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    transform: rotate(359deg);
+}
+
+.area-four {
+    position: absolute;
+    top: 34%;
+    left: 4%;
+    transform: rotate(0deg);
+}
+
+.area-five {
+    position: absolute;
+    top: 48.5%;
+    left: 2.2%;
+    transform: rotate(-1deg);
+}
+
+.area-six {
+    position: absolute;
+    top: 63.5%;
+    left: 3%;
+    transform: rotate(-0.2deg);
+}
+
+.area-six img {
+    width: 70%;
+}
+
+.area-seven {
+    position: absolute;
+    top: 6.6%;
+    right: 23%;
+}
+
+.area-seven img {
+    height: 40px;
+}
+
+.area-eight {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+    transform: rotate(0.3deg);
+}
+
+.area-eight img {
+    width: 70%;
+}
+
+.area-nine {
+    position: absolute;
+    top: 34%;
+    right: -1%;
+    transform: rotate(1deg);
+}
+
+.area-nine img {
+    width: 55%;
+}
+
+.area-ten {
+    position: absolute;
+    top: 48.3%;
+    right: -1.54%;
+    transform: rotate(0deg);
+}
+
+.area-ten img {
+    width: 60%;
+}
+
+.area-eleven {
+    position: absolute;
+    top: 62.5%;
+    right: 1.5%;
+    transform: rotate(0deg);
+}
+
+.area-eleven img {
+    width: 70%;
+}
+
+/* Circle Design */
+.inner-circle {
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent;
+    top: 60px;
+    height: 320px;
+    width: 320px;
+    border: 2px solid transparent;
+    border: 2px solid darkgray;
+    position: relative;
+}
+
+/* nk logo */
+.circular-img {
+    display: inline-block;
+    border-radius: 50%;
+    background: transparent;
+    height: 450px;
+    width: 450px;
+    border: 2px solid transparent;
+    border: 2px solid darkgray;
+    position: relative;
+}
+
+.circular-img::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: 24%;
+    background-image: url(assets/img/nkg.png);
+    background-repeat: no-repeat;
+    height: 214px;
+    width: 170px;
+}
+
+.company-logo-class {
+    /* width: 100%; */
+    height: 28px;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 32.5rem;
+    left: 17rem;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    padding: 0 40px;
+}
+
+/* Dashboard */
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgb(1 41 112 / 10%);
+    background-color: #fff;
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 5px;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3;
+    background: #f6f9ff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #4154f1;
+}
+
+.dashboard-font-size {
+    font-size: 30px;
+}
+
+.bi-grid::before {
+    content: "\f3fc";
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* main */
+#main {
+    margin-top: 20px;
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+.pagetitle {
+    margin-bottom: 10px;
+}
+
+.pagetitle h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #012970;
+}
+
+/* card style */
+.dashboard .info-card {
+    padding-bottom: 10px;
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgb(1 41 112 / 10%);
+}
+
+.dashboard .filter {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+
+.dashboard .filter .icon {
+    color: #aab7cf;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+a {
+    color: #4154f1;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    border-radius: 4px;
+    padding: 10px 0;
+    -webkit-animation-name: dropdown-animate;
+    animation-name: dropdown-animate;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgb(82 63 105 / 20%);
+}
+
+.dashboard .filter .dropdown-header {
+    padding: 8px 15px;
+}
+
+.dropdown-menu .dropdown-header, .dropdown-menu .dropdown-footer {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+}
+
+.dashboard .filter .dropdown-header h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #aab7cf;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.dashboard .info-card h6 {
+    font-size: 28px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard .filter .dropdown-item {
+    padding: 8px 15px;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.card-body {
+    padding: 0 20px 20px 20px;
+}
+
+.card-title {
+    padding: 20px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #012970;
+    font-family: "Poppins", sans-serif;
+}
+
+.card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dashboard .sales-card .card-icon {
+    color: #4154f1;
+    background: #f6f6fe;
+}
+
+.dashboard .card-icon {
+    font-size: 32px;
+    line-height: 0;
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.dashboard .info-card h6 {
+    font-size: 28px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    #main, #footer {
+        margin-left: 300px;
+    }
+}
+
+
+
+
