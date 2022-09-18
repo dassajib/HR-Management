@@ -37,7 +37,7 @@
   <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
         <div class="d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="dashboard.html" class="logo d-flex align-items-center">
                 <img src="assets/img/nkg.png" alt="">
                 <span class="d-none d-lg-block">NK Group</span>
             </a>
@@ -45,7 +45,7 @@
         </div><!-- End Logo -->
 
         <div class="m-auto">
-            <span class="company-name-header">Nk Group</span>
+            <span class="company-name-header">NK Group</span>
         </div>
     </header>
   <!-- End Header -->
@@ -177,9 +177,43 @@
 
     <main id="main" class="main">
         <div class="card">
-            <div class="card-body add-division-card-body">
+            <div class="card-body p-0">
                 <div class="card-title add-division-card-title">
-                    <h5 class="px-2 py-1 bg-white rounded">Create Now</h5>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Create New</button>
+                    <div  class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header modal-header-background-color">
+                                    <h5 class="modal-title">Division Information</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text division-id-padding" id="basic-addon1">Division Id :</span>
+                                            <input type="text" class="form-control" placeholder="Division Id" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text division-name-padding" id="basic-addon1">Division Name :</span>
+                                            <input type="text" class="form-control" placeholder="Division Name" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text division-serial-padding" id="basic-addon1">Division serial :</span>
+                                            <input type="text" class="form-control" placeholder="Division serial" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text division-status-padding" id="basic-addon1">Status :</span>
+                                            <input type="text" class="form-control" placeholder="Status" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn modal-button">Cancel</button>
+                                    <button type="submit" class="btn modal-button">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <h5 class="text-white text-center">Division Information</h5>
                 </div>
                 <div class="table-responsive">
@@ -203,9 +237,43 @@
                                     <button type="button" class="btn btn-primary btn-sm">
                                         <i class="far fa-eye"></i>
                                     </button>
-                                    <button type="button" class="btn btn-success btn-sm">
+                                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
                                         <i class="fas fa-edit"></i>
                                     </button>
+                                    <div  class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header modal-header-background-color">
+                                                    <h5 class="modal-title">Division Information</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text division-id-edit-modal" id="basic-addon1">Division Id :</span>
+                                                            <input type="text" class="form-control" placeholder="Division Id" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text division-name-edit-modal" id="basic-addon1">Division Name :</span>
+                                                            <input type="text" class="form-control" placeholder="Division Name" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text division-serial-edit-modal" id="basic-addon1">Division serial :</span>
+                                                            <input type="text" class="form-control" placeholder="Division serial" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                        <div class="input-group mb-3">
+                                                            <span class="input-group-text status-edit-modal" id="basic-addon1">Status :</span>
+                                                            <input type="text" class="form-control" placeholder="Status" aria-label="Username" aria-describedby="basic-addon1">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="submit" class="btn modal-button px-2">Cancel</button>
+                                                    <button type="submit" class="btn modal-button px-3">Update</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <button type="button" class="btn btn-danger btn-sm">
                                         <i class="fas fa-trash-alt"></i>
                                     </button>
@@ -220,7 +288,7 @@
                                         <button type="button" class="btn btn-primary btn-sm">
                                             <i class="far fa-eye"></i>
                                         </button>
-                                        <button type="button" class="btn btn-success btn-sm">
+                                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
                                             <i class="fas fa-edit"></i>
                                         </button>
                                         <button type="button" class="btn btn-danger btn-sm">
@@ -237,7 +305,7 @@
                                     <button type="button" class="btn btn-primary btn-sm">
                                         <i class="far fa-eye"></i>
                                     </button>
-                                    <button type="button" class="btn btn-success btn-sm">
+                                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
                                         <i class="fas fa-edit"></i>
                                     </button>
                                     <button type="button" class="btn btn-danger btn-sm">

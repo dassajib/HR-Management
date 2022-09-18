@@ -1400,10 +1400,6 @@ hr {
   background-color: #089ED9!important;
 }
 
-.add-division-table {
-  padding: 0;
-}
-
 h4 {
   margin: 2rem 0rem 1rem;
 }
@@ -1417,7 +1413,48 @@ h4 {
 .add-division-card-title {
   background: #089ED9;
 }
+
+.modal-button {
+  background: #089ED9;
+  color: white;
+}
+
+.modal-header-background-color {
+  background: #089ED9;
+  color: #fff;
+}
+
+.division-id-padding {
+  padding: 0 25px;
+}
+
+.division-name-padding {
+  padding: 0 12px;
+}
+
+.division-serial-padding {
+  padding: 0 14px;
+}
+
+.division-status-padding {
+  padding: 0 38px;
+}
+
+.division-id-edit-modal {
+  padding: 0 27px;
+}
+
+.division-serial-edit-modal {
+  padding: 0 14px;
+}
+
+.status-edit-modal {
+  padding: 0 42px;
+}
+
 /* end of add division */
+
+
 
 
 
