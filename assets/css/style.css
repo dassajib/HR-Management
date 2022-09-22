@@ -1414,6 +1414,14 @@ h4 {
   background: #089ED9;
 }
 
+.card-header {
+  padding: 10px 30px;
+}
+
+.create-modal-button {
+  padding: 0 8px;
+}
+
 .modal-button {
   background: #089ED9;
   color: white;
