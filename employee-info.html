@@ -194,32 +194,99 @@
                         <i class="fa fa-plus"></i>
                         Create New
                     </button>
-                    <h5 class="modal-title m-auto">Division Information</h5>
+                    <h5 class="modal-title m-auto">Employee Information</h5>
                 </div>
                 <div  class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
+                    <div class="modal-dialog modal-xl">
                         <div class="modal-content">
-                            <div class="modal-header modal-header-background-color">
-                                <h5 class="modal-title">Division Information</h5>
+                            <div class="modal-header d-flex justify-content-between modal-header-background-color">
+                                <button class="btn text-primary bg-light mx-2 modal-title">General Info</button>
+                                <button class="btn text-primary bg-light mx-2 modal-title">Job Info</button>
+                                <button class="btn text-primary bg-light mx-2 modal-title">Education Info</button>
+                                <button class="btn text-primary bg-light mx-2 modal-title">Salary Info</button>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
                                 <form>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-id-padding" id="basic-addon1">Division Id :</span>
-                                        <input type="text" class="form-control" placeholder="Division Id" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text employee-id-padding" id="basic-addon1">Employee ID :</span>
+                                            <input type="text" class="form-control" placeholder="100" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text mother-name-padding" id="basic-addon1">Mother Name :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-name-padding" id="basic-addon1">Division Name :</span>
-                                        <input type="text" class="form-control" placeholder="Division Name" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">Employee Name :</span>
+                                            <input type="text" class="form-control" placeholder="Emraj Shah Fakir" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text present-address-padding" id="basic-addon1">Present Address :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-serial-padding" id="basic-addon1">Division serial :</span>
-                                        <input type="text" class="form-control" placeholder="Division serial" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text designation-padding" id="basic-addon1">Designation :</span>
+                                            <input type="text" class="form-control" placeholder="Manager" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">Permanent Address :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-status-padding" id="basic-addon1">Status :</span>
-                                        <input type="text" class="form-control" placeholder="Status" aria-label="Username" aria-describedby="basic-addon1">
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text division-padding" id="basic-addon1">Division :</span>
+                                            <input type="text" class="form-control" placeholder="World Of Technology" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text date-of-birth-padding" id="basic-addon1">Date Of Birth :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text grade-padding" id="basic-addon1">Grade :</span>
+                                            <input type="text" class="form-control" placeholder="Grade1" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text gender-padding" id="basic-addon1">Gender :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text mail-padding" id="basic-addon1">E-mail :</span>
+                                            <input type="text" class="form-control" placeholder="emraj@yahoo.com" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text nationality-padding" id="basic-addon1">Nationality :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text number-padding" id="basic-addon1">Cell Number :</span>
+                                            <input type="text" class="form-control" placeholder="01900000000" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text religion-padding" id="basic-addon1">Religion :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text father-name-padding" id="basic-addon1">Father Name :</span>
+                                            <input type="text" class="form-control" placeholder="Mohammad Enan" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="col input-group mb-3">
+                                            <span class="input-group-text nid-padding" id="basic-addon1">NID No :</span>
+                                            <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
                                     </div>
                                 </form>
                             </div>
@@ -235,19 +302,19 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th scope="col" class="text-center">Division ID</th>
-                                <th scope="col" class="text-center">Division Name</th>
-                                <th scope="col" class="text-center">Division Serial</th>
-                                <th scope="col" class="text-center">Status</th>
+                                <th scope="col" class="text-center">EMP ID</th>
+                                <th scope="col" class="text-center">EMP Name</th>
+                                <th scope="col" class="text-center">EMP Designation</th>
+                                <th scope="col" class="text-center">Cell Number</th>
                                 <th scope="col" class="text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row" class="text-center align-middle">1</th>
-                                <td class="text-center align-middle">World Of Technology</td>
-                                <td class="text-center align-middle">101</td>
-                                <td class="text-center align-middle">Good</td>
+                                <td class="text-center align-middle">EMraj Shah Fakir</td>
+                                <td class="text-center align-middle">manager</td>
+                                <td class="text-center align-middle">01900001110</td>
                                 <td class="text-center align-middle">
                                     <button type="button" class="btn btn-primary btn-sm">
                                         <i class="far fa-eye"></i>
@@ -265,19 +332,19 @@
                                                 <div class="modal-body">
                                                     <form>
                                                         <div class="input-group mb-3">
-                                                            <span class="input-group-text division-id-edit-modal" id="basic-addon1">Division Id :</span>
+                                                            <span class="input-group-text" id="basic-addon1">Division Id :</span>
                                                             <input type="text" class="form-control" placeholder="Division Id" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                         <div class="input-group mb-3">
-                                                            <span class="input-group-text division-name-edit-modal" id="basic-addon1">Division Name :</span>
+                                                            <span class="input-group-text" id="basic-addon1">Division Name :</span>
                                                             <input type="text" class="form-control" placeholder="Division Name" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                         <div class="input-group mb-3">
-                                                            <span class="input-group-text division-serial-edit-modal" id="basic-addon1">Division serial :</span>
+                                                            <span class="input-group-text" id="basic-addon1">Division serial :</span>
                                                             <input type="text" class="form-control" placeholder="Division serial" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                         <div class="input-group mb-3">
-                                                            <span class="input-group-text division-status-edit-modal" id="basic-addon1">Status :</span>
+                                                            <span class="input-group-text" id="basic-addon1">Status :</span>
                                                             <input type="text" class="form-control" placeholder="Status" aria-label="Username" aria-describedby="basic-addon1">
                                                         </div>
                                                     </form>
@@ -296,9 +363,9 @@
                             </tr>
                             <tr>
                                 <th class="text-center align-middle" scope="row">2</th>
-                                    <td class="text-center align-middle">TMDL</td>
-                                    <td class="text-center align-middle">102</td>
-                                    <td class="text-center align-middle">Good</td>
+                                    <td class="text-center align-middle">Emraj Shah Fakir</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">01999999900</td>
                                     <td class="text-center align-middle">
                                         <button type="button" class="btn btn-primary btn-sm">
                                             <i class="far fa-eye"></i>
@@ -313,9 +380,9 @@
                             </tr>
                             <tr>
                                 <th class="text-center align-middle" scope="row">3</th>
-                                <td class="text-center align-middle">World Of Technology</td>
-                                <td class="text-center align-middle">103</td>
-                                <td class="text-center align-middle">Good</td>
+                                <td class="text-center align-middle">Emraj Shah Fakir</td>
+                                <td class="text-center align-middle">manager</td>
+                                <td class="text-center align-middle">01700000000</td>
                                 <td class="text-center align-middle">
                                     <button type="button" class="btn btn-primary btn-sm">
                                         <i class="far fa-eye"></i>
