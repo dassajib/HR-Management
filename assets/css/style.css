@@ -1481,57 +1481,11 @@ h4 {
 } */
 
 /* Employee Information Form Design */
-.employee-id-padding {
-  padding: 0 27px;
+
+.font-12 {
+  font-size: 12px;
 }
 
-.designation-padding {
-  padding: 0 29px;
-}
-
-.division-padding {
-  padding: 0 43px;
-}
-
-.grade-padding , .mail-padding {
-  padding: 0 49px;
-}
-
-.number-padding {
-  padding: 0 25px;
-}
-
-.father-name-padding {
-  padding: 0 23px;
-}
-
-.mother-name-padding {
-  padding: 0 33px;
-}
-
-.present-address-padding {
-  padding: 0 24px;
-}
-
-.date-of-birth-padding {
-  padding: 0 37px;
-}
-
-.gender-padding {
-  padding: 0 58px;
-}
-
-.nationality-padding {
-  padding: 0 45px;
-}
-
-.religion-padding {
-  padding: 0 56px;
-}
-
-.nid-padding {
-  padding: 0 59px;
-}
 
 /* Employee Information Form Design */
 
