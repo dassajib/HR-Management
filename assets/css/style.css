@@ -1481,12 +1481,17 @@ h4 {
 } */
 
 /* Employee Information Form Design */
+.s {
+  padding: 0 40px;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
 
 .font-12 {
   font-size: 11px;
 }
-
-
 /* Employee Information Form Design */
 
 /* end of add division */

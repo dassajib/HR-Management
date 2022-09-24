@@ -26,6 +26,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
 
 
   <!-- Template Main CSS File -->
@@ -190,283 +191,28 @@
         <div class="card card-shadow">
             <div class="card-body p-0">
                 <div class="card-header d-flex modal-header-background-color">
-                    <button type="button" class="btn btn-light text-primary create-modal-button" data-bs-toggle="modal" data-bs-target="#myModal">
-                        <i class="fa fa-plus"></i>
-                        Create New
-                    </button>
+                    <a href="employee-info-add.html" class="m-auto">
+                        <button type="button" class="btn btn-light text-primary create-modal-button">
+                            <i class="fa fa-plus"></i>
+                            Create New
+                        </button>
+                    </a>
                     <h5 class="modal-title m-auto">Employee Information</h5>
-                </div>
-                <div  class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            <div class="modal-header d-flex justify-content-between modal-header-background-color">
-                                <button class="btn text-primary bg-light mx-2 modal-title">General Info</button>
-                                <button class="btn text-primary bg-light mx-2 modal-title">Job Info</button>
-                                <button class="btn text-primary bg-light mx-2 modal-title">Education Info</button>
-                                <button class="btn text-primary bg-light mx-2 modal-title">Salary Info</button>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Employee ID :</span>
-                                            <input type="text" class="form-control w-75" placeholder="100" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Mother Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Employee Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="Emraj Shah Fakir" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Present Address :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Designation :</span>
-                                            <input type="text" class="form-control w-75" placeholder="Manager" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Permanent Address :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Division :</span>
-                                            <input type="text" class="form-control w-75" placeholder="World Of Technology" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Date Of Birth :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Grade :</span>
-                                            <input type="text" class="form-control w-75" placeholder="Grade1" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Gender :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">E-mail :</span>
-                                            <input type="text" class="form-control w-75" placeholder="emraj@yahoo.com" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Nationality :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Cell Number :</span>
-                                            <input type="text" class="form-control w-75" placeholder="01900000000" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Religion :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Father Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="Mohammad Enan" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">NID No :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn modal-button">Cancel</button>
-                                <button type="submit" class="btn modal-button">Save</button>
-                            </div>
-
-
-
-                            <div class="modal-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Application Date :</span>
-                                            <input type="text" class="form-control w-75" placeholder="10/10/2022" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Last Designation :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Interview Date :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Last Company Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Joining Date :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Job Duration :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Confirmation Date :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Responsibility :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Year Of Experience :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col">
-                                            <button class="btn modal-button py-0 float-end">Add More</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn modal-button">Cancel</button>
-                                <button type="submit" class="btn modal-button">Save</button>
-                            </div>
-
-
-
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" class="text-center">SL</th>
-                                            <th scope="col" class="text-center">Exam Name</th>
-                                            <th scope="col" class="text-center">Group</th>
-                                            <th scope="col" class="text-center">Institute Name</th>
-                                            <th scope="col" class="text-center">Result/GPA</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row" class="text-center align-middle">01</th>
-                                            <td class="text-center align-middle">SSC</td>
-                                            <td class="text-center align-middle">Business</td>
-                                            <td class="text-center align-middle">DU</td>
-                                            <td class="text-center align-middle">4.00</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn modal-button">Cancel</button>
-                                <button type="submit" class="btn modal-button">Save</button>
-                            </div>
-
-
-
-                            <div class="modal-body">
-                                <form>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Gross Salary :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col text-center">
-                                            <button class="btn modal-button text-light">Deduction</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Basic Salary :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Income Tax :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">House Rent :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Provident Fund :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Medical Allowance :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col text-center">
-                                            <button class="btn modal-button text-light">Bank Details</button>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Conveyance Allowance :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Bank Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Mobile Allowance :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Branch Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Special Allowance :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="col input-group mb-3">
-                                            <span class="input-group-text w-25 font-12" id="basic-addon1">Account Name :</span>
-                                            <input type="text" class="form-control w-75" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn modal-button">Cancel</button>
-                                <button type="submit" class="btn modal-button">Save</button>
-                            </div>
-                        </div>
+                    <input type="search" class="w-25 form-control m-auto" placeholder="Search..." aria-label="Search">
+                    <div class="dropdown">
+                        <button class="btn btn-light  text-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Employee Status
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Active</a></li>
+                          <li><a class="dropdown-item" href="#">Inactive</a></li>
+                        </ul>
                     </div>
-                </div> 
+                </div>
+
+    
             </div>
-                <div class="table-responsive">
+            <div class="table-responsive">
                     <table class="table table-bordered">
                         <thead>
                             <tr>
