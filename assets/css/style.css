@@ -1480,6 +1480,9 @@ h4 {
   padding: 1px;
 } */
 
+/* end of add division */
+
+
 /* Employee Information Form Design */
 .s {
   padding: 0 40px;
@@ -1494,7 +1497,11 @@ h4 {
 }
 /* Employee Information Form Design */
 
-/* end of add division */
+
+.container{
+  padding-top:50px;
+  margin: auto;
+}
 
 
 
