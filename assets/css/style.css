@@ -1556,6 +1556,20 @@ h4 {
 }
 /* Employee image upload end */
 
+/* Generate Attendance Manually Start */
+
+.time-input-field-width {
+  width: 5ch;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.time-input-width {
+  width: 2rem;
+}
+
 
 
 
