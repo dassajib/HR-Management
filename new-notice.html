@@ -52,191 +52,289 @@
   <!-- End Header -->
 
   <!-- ======= Sidebar ======= -->
-    <aside id="sidebar" class="sidebar">
-        <ul class="sidebar-nav" id="sidebar-nav">
-            <li class="nav-item">
-                <a class="nav-link " href="dashboard.html">
-                    <i class="bi bi-grid"></i>
-                    <span class="text-dark">Dashboard</span>
-                </a>
-            </li><!-- End Dashboard Nav -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link " href="dashboard.html">
+                <i class="bi bi-grid"></i>
+                <span class="text-dark">Dashboard</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
 
-            <!-- Company setting start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#company-setting-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-menu-button-wide"></i>
-                    <span>Company Setting</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="company-setting-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="add-division.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Add Division</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="add-designation.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Add Designation</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="add-grade.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Add Grade</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End Company setting Nav -->
+        <!-- Company setting start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#company-setting-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-menu-button-wide"></i>
+                <span>Company Setting</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="company-setting-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="add-division.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Division</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-designation.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Designation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-grade.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Grade</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Company setting Nav -->
 
-            <!-- Employee management start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#employee-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-people"></i>
-                    <span>Employee Management</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="employee-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="employee-info.html">
-                            <i class="bi bi-circle"></i> 
-                            <span>Employee Information</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End employee management Nav -->
+        <!-- Employee management start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#employee-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-people"></i>
+                <span>Employee Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="employee-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="employee-info.html">
+                        <i class="bi bi-circle"></i> 
+                        <span>Employee Information</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End employee management Nav -->
 
-            <!-- Attendance management start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#attendance-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-layout-text-window-reverse"></i>
-                    <span>Attendance and Leave Management</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="attendance-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
-                            <span>Attendance Management</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
-                            <span>Leave Management</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End attendance management Nav -->
+        <!-- Attendance management start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#attendance-leave-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <span>Attendance and Leave Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="attendance-leave-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#attendance-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Attendance Management</span>
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="attendance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Generate Attendance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Manual Attendance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Edit Attendance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#leave-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Leave Management</span>
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="leave-side-nav" class="nav-content collapse " data-bs-parent="#leave-side-nav">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Leave Type Entry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Yearly Leave Declare</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Leave Application Form</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Special Leave Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Cancel</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- End attendance management Nav -->
 
-            <!-- Compensation nav start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#compensation-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-gem"></i>
-                    <span>Compensation & Benefits</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="compensation-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
-                            <span>Salary Management</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
-                            <span>Loan Management</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
-                            <span>Advance Management</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End compensation Nav -->
+        <!-- Compensation nav start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#compensation-benefits-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <span>Compensation & Benefits</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="compensation-benefits-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#salary-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Salary Management</span>
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="salary-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Generate Monthly Salary</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Edit Monthly Salary</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#loan-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Loan Management</span>
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="loan-side-nav" class="nav-content collapse " data-bs-parent="#loan-side-nav">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Loan Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Decline Loan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#advance-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Advance Management</span>
+                        <i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="advance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Advance Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Decline Advance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- End compensation Nav -->
 
-            <!-- <li class="nav-heading">Pages</li> -->
+        <!-- <li class="nav-heading">Pages</li> -->
 
-            <!-- Holiday management -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#holiday-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-calendar3"></i>
-                    <span>Holiday Management</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="holiday-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="monthly-holiday-decalre.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Monthly Holiday Declare</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="edit-delete-holiday.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Edit/Delete Holiday</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End Holiday management Nav -->
+        <!-- Holiday management -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#holiday-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-calendar3"></i>
+                <span>Holiday Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="holiday-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="monthly-holiday-decalre.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Monthly Holiday Declare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="edit-delete-holiday.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Edit/Delete Holiday</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Holiday management Nav -->
 
-            <!-- Notice Board Start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#notice-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-envelope-paper"></i>
-                    <span>Notice Board</span>
-                    <i class="bi bi-chevron-down ms-auto"></i>
-                </a>
-                <ul id="notice-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                    <li>
-                        <a href="new-notice.html">
-                            <i class="bi bi-circle"></i>
-                            <span>New Notice</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="edit-delete-notice.html">
-                            <i class="bi bi-circle"></i>
-                            <span>Edit/Delete Notice</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <!-- End of Notice Board -->
+        <!-- Notice Board Start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#notice-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-envelope-paper"></i>
+                <span>Notice Board</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="notice-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="new-notice.html">
+                        <i class="bi bi-circle"></i>
+                        <span>New Notice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="edit-delete-notice.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Edit/Delete Notice</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End of Notice Board -->
 
-            <!-- Birthday Reminder nav start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="birthday-reminder.html">
-                    <i class="bi bi-balloon"></i>
-                    <span>Birthday Reminder</span>
-                </a>
-            </li>
-            <!-- End of birthday reminder -->
+        <!-- Birthday Reminder nav start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="birthday-reminder.html">
+                <i class="bi bi-balloon"></i>
+                <span>Birthday Reminder</span>
+            </a>
+        </li>
+        <!-- End of birthday reminder -->
 
+        <!-- Report Start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-question-circle"></i>
+                <span>Report</span>
+            </a>
+        </li>
+        <!-- End report Nav -->
 
-            <!-- Report Start -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#">
-                    <i class="bi bi-question-circle"></i>
-                    <span>Report</span>
-                </a>
-            </li>
-            <!-- End report Nav -->
-
-            <!-- End Contact Page Nav -->
-            
-            <!-- End Blank Page Nav -->
-        </ul>
-    </aside>
+        <!-- End Contact Page Nav -->
+        
+        <!-- End Blank Page Nav -->
+    </ul>
+</aside>
   <!-- End Sidebar-->
 
     <main id="main" class="main">

@@ -110,23 +110,77 @@
 
             <!-- Attendance management start -->
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#attendance-nav" data-bs-toggle="collapse" href="#">
+                <a class="nav-link collapsed" data-bs-target="#attendance-leave-nav" data-bs-toggle="collapse" href="#">
                     <i class="bi bi-layout-text-window-reverse"></i>
                     <span>Attendance and Leave Management</span>
                     <i class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <ul id="attendance-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <ul id="attendance-leave-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
+                        <a class="nav-link collapsed" data-bs-target="#attendance-side-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-layout-text-window-reverse"></i>
                             <span>Attendance Management</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
                         </a>
+                        <ul id="attendance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Generate Attendance</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Manual Attendance</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Edit Attendance</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
+                        <a class="nav-link collapsed" data-bs-target="#leave-side-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-layout-text-window-reverse"></i>
                             <span>Leave Management</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
                         </a>
+                        <ul id="leave-side-nav" class="nav-content collapse " data-bs-parent="#leave-side-nav">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Leave Type Entry</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Yearly Leave Declare</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Leave Application Form</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Special Leave Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Approve/Cancel</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
@@ -134,29 +188,74 @@
 
             <!-- Compensation nav start -->
             <li class="nav-item">
-                <a class="nav-link collapsed" data-bs-target="#compensation-nav" data-bs-toggle="collapse" href="#">
-                    <i class="bi bi-gem"></i>
+                <a class="nav-link collapsed" data-bs-target="#compensation-benefits-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i>
                     <span>Compensation & Benefits</span>
                     <i class="bi bi-chevron-down ms-auto"></i>
                 </a>
-                <ul id="compensation-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <ul id="compensation-benefits-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                     <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
+                        <a class="nav-link collapsed" data-bs-target="#salary-side-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-layout-text-window-reverse"></i>
                             <span>Salary Management</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
                         </a>
+                        <ul id="salary-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Generate Monthly Salary</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Edit Monthly Salary</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
+                        <a class="nav-link collapsed" data-bs-target="#loan-side-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-layout-text-window-reverse"></i>
                             <span>Loan Management</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
                         </a>
+                        <ul id="loan-side-nav" class="nav-content collapse " data-bs-parent="#loan-side-nav">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Loan Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Approve/Decline Loan</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="bi bi-circle"></i>
+                        <a class="nav-link collapsed" data-bs-target="#advance-side-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-layout-text-window-reverse"></i>
                             <span>Advance Management</span>
+                            <i class="bi bi-chevron-down ms-auto"></i>
                         </a>
+                        <ul id="advance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Advance Application</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-circle"></i>
+                                    <span>Approve/Decline Advance</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
