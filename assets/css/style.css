@@ -741,6 +741,16 @@ h6 {
   list-style: none;
 }
 
+.sidebar-sub {
+  padding: 10px 0 10px 68px!important;
+}
+
+.sidebar-sub-menu-icon {
+    font-size: 14px!important;
+    margin-right: 2px!important;
+    color: #4154f1!important;
+}
+
 .sidebar-nav .nav-content a {
   display: flex;
   align-items: center;
