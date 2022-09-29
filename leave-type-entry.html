@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NK HR</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="dashboard.html" class="logo d-flex align-items-center">
+                <img src="assets/img/nkg.png" alt="">
+                <span class="d-none d-lg-block">NK Group</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="m-auto">
+            <span class="company-name-header">NK Group</span>
+        </div>
+    </header>
+  <!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+            <a class="nav-link " href="dashboard.html">
+                <i class="bi bi-grid"></i>
+                <span class="text-dark">Dashboard</span>
+            </a>
+        </li><!-- End Dashboard Nav -->
+
+        <!-- Company setting start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#company-setting-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-menu-button-wide"></i>
+                <span>Company Setting</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="company-setting-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="add-division.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Division</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-designation.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Designation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-grade.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Add Grade</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Company setting Nav -->
+
+        <!-- Employee management start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#employee-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-people"></i>
+                <span>Employee Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="employee-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="employee-info.html">
+                        <i class="bi bi-circle"></i> 
+                        <span>Employee Information</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End employee management Nav -->
+
+        <!-- Attendance management start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#attendance-leave-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <span>Attendance and Leave Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="attendance-leave-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#attendance-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Attendance Management</span>
+                        <i class="bi bi-chevron-down ms-auto sidebar-sub-menu-icon"></i>
+                    </a>
+                    <ul id="attendance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a class="sidebar-sub" href="generate-attendance.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Generate Attendance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="manual-attendance.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Manual Attendance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="edit-attendance.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Edit Attendance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#leave-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Leave Management</span>
+                        <i class="bi bi-chevron-down ms-auto sidebar-sub-menu-icon"></i>
+                    </a>
+                    <ul id="leave-side-nav" class="nav-content collapse " data-bs-parent="#leave-side-nav">
+                        <li>
+                            <a class="sidebar-sub" href="leave-type-entry.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Leave Type Entry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="yearly-leave-decalre.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Yearly Leave Declare</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="leave-application-form.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Leave Application Form</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="special-leave-application.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Special Leave Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="approve-cancel-leave.html">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Cancel</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- End attendance management Nav -->
+
+        <!-- Compensation nav start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#compensation-benefits-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i>
+                <span>Compensation & Benefits</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="compensation-benefits-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#salary-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Salary Management</span>
+                        <i class="bi bi-chevron-down ms-auto sidebar-sub-menu-icon"></i>
+                    </a>
+                    <ul id="salary-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Generate Monthly Salary</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Edit Monthly Salary</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#loan-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Loan Management</span>
+                        <i class="bi bi-chevron-down ms-auto sidebar-sub-menu-icon"></i>
+                    </a>
+                    <ul id="loan-side-nav" class="nav-content collapse " data-bs-parent="#loan-side-nav">
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Loan Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Decline Loan</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="nav-link collapsed" data-bs-target="#advance-side-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i>
+                        <span>Advance Management</span>
+                        <i class="bi bi-chevron-down ms-auto sidebar-sub-menu-icon"></i>
+                    </a>
+                    <ul id="advance-side-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav-child">
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Advance Application</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="sidebar-sub" href="#">
+                                <i class="bi bi-circle"></i>
+                                <span>Approve/Decline Advance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <!-- End compensation Nav -->
+
+        <!-- <li class="nav-heading">Pages</li> -->
+
+        <!-- Holiday management -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#holiday-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-calendar3"></i>
+                <span>Holiday Management</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="holiday-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="monthly-holiday-decalre.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Monthly Holiday Declare</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="edit-delete-holiday.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Edit/Delete Holiday</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Holiday management Nav -->
+
+        <!-- Notice Board Start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#notice-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-envelope-paper"></i>
+                <span>Notice Board</span>
+                <i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="notice-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="new-notice.html">
+                        <i class="bi bi-circle"></i>
+                        <span>New Notice</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="edit-delete-notice.html">
+                        <i class="bi bi-circle"></i>
+                        <span>Edit/Delete Notice</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End of Notice Board -->
+
+        <!-- Birthday Reminder nav start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="birthday-reminder.html">
+                <i class="bi bi-balloon"></i>
+                <span>Birthday Reminder</span>
+            </a>
+        </li>
+        <!-- End of birthday reminder -->
+
+        <!-- Report Start -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#">
+                <i class="bi bi-question-circle"></i>
+                <span>Report</span>
+            </a>
+        </li>
+        <!-- End report Nav -->
+
+        <!-- End Contact Page Nav -->
+        
+        <!-- End Blank Page Nav -->
+    </ul>
+</aside>
+  <!-- End Sidebar-->
+
+    <main id="main" class="main">
+        <iv class="card card-shadow">
+            <div class="card-body p-0">
+                <div class="card-header d-flex modal-header-background-color">
+                    <button type="button" class="btn btn-light text-primary create-modal-button" data-bs-toggle="modal" data-bs-target="#myModal">
+                        <i class="fa fa-plus"></i>
+                        Create New
+                    </button>
+                    <h5 class="modal-title m-auto">Leave Type Entry</h5>
+                </div>
+                <div  class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-background-color">
+                                <h5 class="modal-title">Leave Type</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body leave-entry-modal-height">
+                                <form class="mt-2 d-flex">
+                                    <label class="col-sm-2 col-form-label">Leave Type :</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected="">Type Of Leave</option>
+                                        <option value="1">Casual</option>
+                                        <option value="2">Sick</option>
+                                        <option value="3">Personal</option>
+                                        <option value="4">Tour Leave</option> 
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn modal-button" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn modal-button">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="table-responsive p-3">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-center">Leave Type</th>
+                            <th scope="col" class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="text-center align-middle">Personal Leave</td>
+                            <td class="text-center align-middle">
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <div  class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header modal-header-background-color">
+                                                <h5 class="modal-title">Edit Leave Type</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form class="mt-2 d-flex">
+                                                    <label class="col-sm-2 col-form-label">Leave Type :</label>
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option selected="">Type Of Leave</option>
+                                                        <option value="1">Casual</option>
+                                                        <option value="2">Sick</option>
+                                                        <option value="3">Personal</option>
+                                                        <option value="4">Tour Leave</option> 
+                                                    </select>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="submit" class="btn modal-button px-2" data-bs-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn modal-button px-3">Update</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text-center align-middle">Sick Leave</td>
+                                <td class="text-center align-middle">
+                                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                        <i class="fas fa-edit"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <i class="far fa-trash-alt"></i>
+                                    </button>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text-center align-middle">Personal Leave</td>
+                            <td class="text-center align-middle">
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                    <i class="fas fa-edit"></i>
+                                </button>
+                                <button type="button" class="btn btn-danger btn-sm">
+                                    <i class="far fa-trash-alt"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn modal-button mx-2 px-2" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn modal-button px-3">Save</button>
+                </div>
+            </div>
+        </div>
+    </main>
+<!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.min.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/calendar.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

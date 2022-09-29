@@ -1570,6 +1570,12 @@ h4 {
   width: 2rem;
 }
 
+/* Leave entry type design */
+
+.leave-entry-modal-height {
+  height: 8rem;
+}
+
 
 
 
