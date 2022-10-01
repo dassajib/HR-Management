@@ -336,151 +336,93 @@
 </aside>
   <!-- End Sidebar-->
 
-    <main id="main" class="main">
-        <iv class="card card-shadow">
-            <div class="card-body p-0">
+    <main class="main" id="main">
+        <div class="card card-shadow">
+            <div class="card-title p-0">
                 <div class="card-header d-flex modal-header-background-color">
-                    <button type="button" class="btn btn-light text-primary create-modal-button" data-bs-toggle="modal" data-bs-target="#myModal">
-                        <i class="fa fa-plus"></i>
-                        Create New
-                    </button>
-                    <h5 class="modal-title m-auto">Division Information</h5>
+                    <h5 class="modal-title m-auto">Edit/Delete Monthly Salary</h5>
                 </div>
-                <div  class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header modal-header-background-color">
-                                <h5 class="modal-title">Division Information</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-id-padding">Division Id :</span>
-                                        <input type="text" class="form-control" placeholder="Division Id" name="division-id" required>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-name-padding">Division Name :</span>
-                                        <input type="text" class="form-control" placeholder="Division Name" name="division-name" required>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-serial-padding">Division serial :</span>
-                                        <input type="text" class="form-control" placeholder="Division serial" name="division-serial" required>
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <span class="input-group-text division-status-padding">Status :</span>
-                                        <input type="text" class="form-control" placeholder="Status" name="status" required>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn modal-button" data-bs-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn modal-button">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
             </div>
-            <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="text-center">Division ID</th>
-                            <th scope="col" class="text-center">Division Name</th>
-                            <th scope="col" class="text-center">Division Serial</th>
-                            <th scope="col" class="text-center">Status</th>
-                            <th scope="col" class="text-center">Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="text-center align-middle">1</th>
-                            <td class="text-center align-middle">World Of Technology</td>
-                            <td class="text-center align-middle">101</td>
-                            <td class="text-center align-middle">Good</td>
-                            <td class="text-center align-middle">
-                                <button type="button" class="btn btn-primary btn-sm">
-                                    <i class="far fa-eye"></i>
-                                </button>
-                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
-                                    <i class="fas fa-edit"></i>
-                                </button>
-                                <div  class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header modal-header-background-color">
-                                                <h5 class="modal-title">Division Information</h5>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text division-id-edit-modal">Division Id :</span>
-                                                        <input type="text" class="form-control" placeholder="Division Id" name="division-id" required>
-                                                    </div>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text division-name-edit-modal">Division Name :</span>
-                                                        <input type="text" class="form-control" placeholder="Division Name" name="division-name" required>
-                                                    </div>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text division-serial-edit-modal">Division serial :</span>
-                                                        <input type="text" class="form-control" placeholder="Division serial" name="division-serial" required>
-                                                    </div>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text division-status-edit-modal">Status :</span>
-                                                        <input type="text" class="form-control" placeholder="Status" name="status" required>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="submit" class="btn modal-button px-2" data-bs-dismiss="modal">Cancel</button>
-                                                <button type="submit" class="btn modal-button px-3">Update</button>
-                                            </div>
+            <div class="card-body">
+                <div class="tab-content p-2" id="myTabContent">       
+                    <div class="tab-pane fade active show" id="general-info" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="modal-body">
+                            <form class="pt-4">
+                                <div class="row">
+                                    <div class="col input-group mb-3">
+                                        <span class="input-group-text font-weight-900 w-25 font-12" for="inputDate">Month Name :</span>
+                                        <input type="month" class="form-control w-75" name="date" placeholder="" required>
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col input-group mb-3">
+                                        <!-- <span class="input-group-text font-weight-900 w-25 font-12">Division Name :</span> -->
+                                        <span class="input-group-text w-25 font-weight-900 font-12 p-2">Division Name :</span>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected="">Division one</option>
+                                            <option value="1">Division two</option>
+                                            <option value="2">Division three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check mt-2"> 
+                                            <input class="form-check-input" type="checkbox" id="gridCheck"> 
+                                            <label class="form-check-label" for="gridCheck">All</label>
                                         </div>
                                     </div>
-                                </div>
-                                <button type="button" class="btn btn-danger btn-sm">
-                                    <i class="fas fa-trash-alt"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th class="text-center align-middle" scope="row">2</th>
-                                <td class="text-center align-middle">TMDL</td>
-                                <td class="text-center align-middle">102</td>
-                                <td class="text-center align-middle">Good</td>
-                                <td class="text-center align-middle">
-                                    <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="far fa-eye"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
-                                        <i class="fas fa-edit"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-sm">
-                                        <i class="far fa-trash-alt"></i>
-                                    </button>
-                                </td>
-                        </tr>
-                        <tr>
-                            <th class="text-center align-middle" scope="row">3</th>
-                            <td class="text-center align-middle">World Of Technology</td>
-                            <td class="text-center align-middle">103</td>
-                            <td class="text-center align-middle">Good</td>
-                            <td class="text-center align-middle">
-                                <button type="button" class="btn btn-primary btn-sm">
-                                    <i class="far fa-eye"></i>
-                                </button>
-                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
-                                    <i class="fas fa-edit"></i>
-                                </button>
-                                <button type="button" class="btn btn-danger btn-sm">
-                                    <i class="far fa-trash-alt"></i>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </div>                               
+                            </form>
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="modal-header-background-color">
+                                        <tr>
+                                            <th scope="col" class="text-center">SL</th>
+                                            <th scope="col" class="text-center">EMP Id</th>
+                                            <th scope="col" class="text-center">EMP Name</th>
+                                            <th scope="col" class="text-center">Designation</th>
+                                            <th scope="col" class="text-center">Division</th>
+                                            <th scope="col" class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row" class="text-center align-middle">1</th>
+                                            <td class="text-center align-middle">100</td>
+                                            <td class="text-center align-middle">EMraj Shah Fakir</td>
+                                            <td class="text-center align-middle">manager</td>
+                                            <td class="text-center align-middle">division</td>
+                                            <td class="text-center align-middle">
+                                                <button type="button" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" class="text-center align-middle">1</th>
+                                            <td class="text-center align-middle">100</td>
+                                            <td class="text-center align-middle">EMraj Shah Fakir</td>
+                                            <td class="text-center align-middle">manager</td>
+                                            <td class="text-center align-middle">division</td>
+                                            <td class="text-center align-middle">
+                                                <button type="button" class="btn btn-danger btn-sm">
+                                                    <i class="fas fa-times"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="submit" class="btn modal-button" data-bs-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn modal-button mx-2">Generate</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
+            
         </div>
     </main>
 <!-- End #main -->
