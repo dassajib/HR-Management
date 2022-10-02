@@ -347,47 +347,62 @@
                 <div class="tab-content" id="myTabContent">       
                     <div class="tab-pane fade active show" id="general-info" role="tabpanel" aria-labelledby="home-tab">
                         <div class="modal-body">
-                            <form class="pt-4">
-                                <div class="row">
-                                    <div class="col mb-3 d-flex"> 
-                                        <span class="font-weight-900 font-12 p-2">Division Name :</span>
-                                        <div class=""> 
-                                            <select class="form-select" aria-label="Default select example">
-                                                <option selected="">Division one</option>
-                                                <option value="1">Division two</option>
-                                                <option value="2">Division three</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-check mx-4 p-2"> 
-                                            <input class="form-check-input" type="checkbox" id="gridCheck"> 
-                                            <label class="form-check-label font-weight-900" for="gridCheck"> All </label>
-                                        </div>
+                            <form class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label font-weight-600">Division Name :</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
                                     </div>
-                                    <div class="col input-group mb-3">
-                                        <span class="font-weight-900 font-12 p-2">From Date :</span>
-                                        <input type="date" class="form-control" name="date" placeholder="" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="form-label font-weight-600">From Date :</label>
+                                    <input type="date" class="form-control" name="date" id="inputPassword4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputAddress" class="form-label font-weight-600">In Time :</label>
+                                    <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
                                     </div>
-                                    <div class="col">
-                                        <div class="d-flex">
-                                            <div>
-                                                <span class="font-weight-900 font-12">In Time :</span>
-                                            </div>
-                                            <div class="px-2">
-                                                <input type="number" class="time-input-field-width border-1 rounded">
-                                                <span> : </span>
-                                                <input type="number" class="time-input-field-width border-1 rounded">
-                                                <span class="font-weight-900">AM</span>
-                                                <input class="form-check-input pt-2 mx-2" type="checkbox" id="gridCheck"> 
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label font-weight-600">Employee Name :</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
                                     </div>
-                                </div> 
-                                <!-- <div class="form-group">
-                                    <label class="col-md-4 control-label">Email</label>
-                                    <div class="col-md-6">
-                                      <input type="email" class="form-control" name="email" value="">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="form-label font-weight-600">To Date :</label>
+                                    <input type="date" class="form-control" name="date" id="inputPassword4">
+                                </div>
+                                
+                                <div class="col-md-4">
+                                    <label for="inputZip" class="form-label font-weight-600">Out Time :</label>
+                                    <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
                                     </div>
-                                  </div> -->
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -463,8 +478,176 @@
                                         </button>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                            <svg class="svg-inline--fa fa-edit fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                        <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header modal-header-background-color">
+                                                        <h5 class="modal-title">Division Information</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-id-edit-modal">Division Id :</span>
+                                                                <input type="text" class="form-control" name="division-id" placeholder="Division Id" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-name-edit-modal">Division Name :</span>
+                                                                <input type="text" class="form-control" name="division-name" placeholder="Division Name" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-serial-edit-modal">Division serial :</span>
+                                                                <input type="text" class="form-control" name="division-serial" placeholder="Division serial" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-status-edit-modal">Status :</span>
+                                                                <input type="text" class="form-control" name="status" placeholder="Status" required="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn modal-button px-2" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" class="btn modal-button px-3">Update</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-sm">
+                                            <svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg=""><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                            <svg class="svg-inline--fa fa-edit fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                        <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header modal-header-background-color">
+                                                        <h5 class="modal-title">Division Information</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-id-edit-modal">Division Id :</span>
+                                                                <input type="text" class="form-control" name="division-id" placeholder="Division Id" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-name-edit-modal">Division Name :</span>
+                                                                <input type="text" class="form-control" name="division-name" placeholder="Division Name" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-serial-edit-modal">Division serial :</span>
+                                                                <input type="text" class="form-control" name="division-serial" placeholder="Division serial" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-status-edit-modal">Status :</span>
+                                                                <input type="text" class="form-control" name="status" placeholder="Status" required="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn modal-button px-2" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" class="btn modal-button px-3">Update</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-sm">
+                                            <svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg=""><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                            <svg class="svg-inline--fa fa-edit fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z"></path></svg><!-- <i class="fas fa-edit"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                        <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header modal-header-background-color">
+                                                        <h5 class="modal-title">Division Information</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-id-edit-modal">Division Id :</span>
+                                                                <input type="text" class="form-control" name="division-id" placeholder="Division Id" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-name-edit-modal">Division Name :</span>
+                                                                <input type="text" class="form-control" name="division-name" placeholder="Division Name" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-serial-edit-modal">Division serial :</span>
+                                                                <input type="text" class="form-control" name="division-serial" placeholder="Division serial" required="">
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <span class="input-group-text division-status-edit-modal">Status :</span>
+                                                                <input type="text" class="form-control" name="status" placeholder="Status" required="">
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="submit" class="btn modal-button px-2" data-bs-dismiss="modal">Cancel</button>
+                                                        <button type="submit" class="btn modal-button px-3">Update</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-danger btn-sm">
+                                            <svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg=""><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg><!-- <i class="fas fa-times"></i> Font Awesome fontawesome.com -->
+                                        </button>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
+                    </div>
+                    <div class="text-end">
+                        <button class="py-0 btn btn-primary">New</button>
+                        <button class="py-0 btn btn-primary">Save</button>
+                        <button class="py-0 btn btn-primary">Refresh</button>
+                        <button class="py-0 btn btn-primary">Cancel</button>
                     </div>
                 </div>
             </div>
@@ -492,7 +675,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#today").value = today;
+        document.querySelector("#today2").valueAsDate = new Date();
+  </script>
 </body>
 
 </html>

@@ -347,8 +347,62 @@
                 <div class="tab-content" id="myTabContent">       
                     <div class="tab-pane fade active show" id="general-info" role="tabpanel" aria-labelledby="home-tab">
                         <div class="modal-body">
-                            <form class="pt-4">
+                            <form class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label  font-weight-600">Division Name :</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="form-label  font-weight-600">From Date :</label>
+                                    <input type="date" class="form-control" name="date" id="inputPassword4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputAddress" class="form-label  font-weight-600">In Time :</label>
+                                    <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label font-weight-600">Employee Name :</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="form-label font-weight-600">To Date :</label>
+                                    <input type="date" class="form-control" name="date" id="inputPassword4">
+                                </div>
                                 
+                                <div class="col-md-4">
+                                    <label for="inputZip" class="form-label font-weight-600">Out Time :</label>
+                                    <input type="time" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            All
+                                        </label>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <div class="modal-footer">
@@ -360,18 +414,18 @@
                         <table class="table table-bordered">
                             <thead class="modal-header-background-color">
                                 <tr>
-                                    <th scope="col" class="text-center">SL</th>
-                                    <th scope="col" class="text-center">EMP ID</th>
-                                    <th scope="col" class="text-center">Employee Name</th>
-                                    <th scope="col" class="text-center">Designation</th>
-                                    <th scope="col" class="text-center">Reason</th>
-                                    <th scope="col" class="text-center">Atta Date</th>
-                                    <th scope="col" class="text-center">HH In</th>
-                                    <th scope="col" class="text-center">MM In</th>
-                                    <th scope="col" class="text-center">HH Out</th>
-                                    <th scope="col" class="text-center">MM Out</th>
-                                    <th scope="col" class="text-center">Permission</th>
-                                    <th scope="col" class="text-center">Action</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">SL</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">EMP ID</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Employee Name</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Designation</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Reason</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Atta Date</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">HH In</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">MM In</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">HH Out</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">MM Out</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Permission</th>
+                                    <th scope="col" class="text-center edit-attendance-table-header">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -396,7 +450,115 @@
                                     <td class="text-center align-middle">
                                         <input class="rounded time-input-width" type="text">
                                     </td>
+                                    <td class="text-center align-middle">HR</td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">00</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
                                     <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">HR</td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">00</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">HR</td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">00</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">HR</td>
+                                    <td class="text-center align-middle">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="text-center align-middle">1</th>
+                                    <td class="text-center align-middle">00</td>
+                                    <td class="text-center align-middle">Emraj Shah</td>
+                                    <td class="text-center align-middle">manager</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">11</td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">
+                                        <input class="rounded time-input-width" type="text">
+                                    </td>
+                                    <td class="text-center align-middle">HR</td>
                                     <td class="text-center align-middle">
                                         <input class="form-check-input" type="checkbox" id="gridCheck">
                                     </td>
@@ -405,9 +567,9 @@
                             </tbody>
                         </table>
                         <div class="modal-footer">
-                            <button type="submit" class="btn modal-button mx-2">Update</button>
+                            <button type="submit" class="btn modal-button py-0 mx-2">Update</button>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
             
@@ -434,7 +596,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#today").value = today;
+        document.querySelector("#today2").valueAsDate = new Date();
+  </script>
 </body>
 
 </html>
+                    
+                   

@@ -261,7 +261,8 @@ h6 {
 }
 
 .employee-card-font {
-  font-size: 44px;
+  font-size: 40px;
+  margin-top: 10px;
 }
 
 .card-img-overlay {
@@ -1576,6 +1577,16 @@ h4 {
   height: 8rem;
 }
 
+
+
+/* edit attendance */
+.edit-attendance-table-header {
+  font-size: 14px;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
 
 
 
