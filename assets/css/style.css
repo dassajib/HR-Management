@@ -1333,6 +1333,10 @@ hr {
   background: #ffdede;
 }
 
+.head {
+  font-size: 12px;
+}
+
 /* #calendar .dd {
   font-size: 1.2em;
   color: #999;
