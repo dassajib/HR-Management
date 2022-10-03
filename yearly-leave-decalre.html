@@ -354,15 +354,13 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body leave-entry-modal-height">
-                                <form class="mt-2 d-flex">
-                                    <label class="col-sm-2 col-form-label">Leave Type :</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected="">Type Of Leave</option>
-                                        <option value="1">Casual</option>
-                                        <option value="2">Sick</option>
-                                        <option value="3">Personal</option>
-                                        <option value="4">Tour Leave</option> 
-                                    </select>
+                                <form class="mt-2">
+                                    <div class="row">
+                                        <div class="col-12 d-flex mb-3">
+                                            <label class="col-sm-2 col-form-label">Leave Type :</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
@@ -410,15 +408,21 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form class="mt-2 d-flex">
-                                                    <label class="col-sm-2 col-form-label">Leave Type :</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected="">Type Of Leave</option>
-                                                        <option value="1">Casual</option>
-                                                        <option value="2">Sick</option>
-                                                        <option value="3">Personal</option>
-                                                        <option value="4">Tour Leave</option> 
-                                                    </select>
+                                                <form class="mt-2">
+                                                    <div class="row">
+                                                        <div class="col-12 d-flex mb-3">
+                                                            <label class="col-sm-2 col-form-label">Leave Type :</label>
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                        <div class="col-12 d-flex mb-3">
+                                                            <label class="col-sm-2 col-form-label">Year :</label>
+                                                            <input type="number" min="0" class="form-control">
+                                                        </div>
+                                                        <div class="col-12 d-flex mb-3">
+                                                            <label class="col-sm-2 col-form-label">Day's :</label>
+                                                            <input type="number" min="0" class="form-control">
+                                                        </div>
+                                                    </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
